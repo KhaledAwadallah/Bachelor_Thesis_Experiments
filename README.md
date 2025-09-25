@@ -14,7 +14,7 @@ This repository contains the code for the bachelor thesis *"Fine-tuned Frequent 
 Files in this project (what each file implements):
 
 - `data/muv.csv`  
-  Raw dataset snapshot (MUV subset) used for experiments / preprocessing input.
+  Dataset used for the experiments.
 
 - `data_processing.py`  
   Preprocessing and dataset preparation: fingerprint/feature computation.
