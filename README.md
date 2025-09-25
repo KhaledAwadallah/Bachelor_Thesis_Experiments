@@ -5,7 +5,7 @@ This repository contains the code for the bachelor thesis *"Fine-tuned Frequent 
 
 - **Random Forest (RF)** — standard machine learning baseline.  
 - **Baseline Frequent Hitter (BFH)** — Naive frequent hitters method that **ignores** the task support set at prediction time.  
-- **Fine-Tuned Frequent Hitter (FTFH)** — A frequent hitters model that is **fine-tuned** on each task’s support set (the thesis uses 300 update steps chosen on validation tasks).  
+- **Fine-Tuned Frequent Hitter (FTFH)** — A frequent hitters model that is **fine-tuned** on each task’s support set.  
 - **MAML** — gradient-based meta-learner (evaluated with 5 and 10 inner steps).
 ---
 
@@ -17,7 +17,7 @@ Files in this project (what each file implements):
   Raw dataset snapshot (MUV subset) used for experiments / preprocessing input.
 
 - `data_processing.py`  
-  Preprocessing and dataset preparation: task split generation (train/val/test tasks), fingerprint/feature computation, and creation of processed data used by training scripts.
+  Preprocessing and dataset preparation: fingerprint/feature computation.
 
 - `config.py`  
   Centralized experiment configuration and default hyperparameters.
