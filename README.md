@@ -52,4 +52,4 @@ Files in this project (what each file implements):
 - **Hyperparameter selection:** done on validation tasks only, Test tasks are only used for final performance evaluation.  
 - **Reporting convention:** for each random seed I average scores across the three test tasks, then compute the reported mean ± standard deviation **across the 10 seeds** (SD across seeds).
 - See `config.py` for the exact hyperparameters used.  
-- Implementation details and full experimental discussion (results, tables, figures, and supervisor feedback considerations) are documented in the thesis PDF included with the project.
+- Implementation details and full experimental discussion are documented in the thesis PDF included with the project.
