@@ -1,17 +1,15 @@
-# Frequent Hitters in Few-Shot Drug Discovery
+# Fine-Tuned Frequent Hitters in Drug Discovery
 
 **Short project summary**  
-This repository contains the code for the bachelor thesis *"Fine-tuned Frequent Hitters in Drug Discovery""* (Khaled Awadallah, 2025). The work investigates whether *a fine-tuned frequent hitters* can compete with state-of-the-art meta-learning methods like MAML. Four models are implemented:
+This repository contains the code for my bachelor thesis *"Fine-tuned Frequent Hitters in Drug Discovery""* (Khaled Awadallah, 2025). The work investigates whether *a fine-tuned frequent hitters* can compete with state-of-the-art meta-learning methods like MAML. Four models are implemented:
 
 - **Random Forest (RF)** — standard machine learning baseline.  
 - **Baseline Frequent Hitter (BFH)** — Naive frequent hitters method that **ignores** the task support set at prediction time.  
 - **Fine-Tuned Frequent Hitter (FTFH)** — A frequent hitters model that is **fine-tuned** on each task’s support set.  
-- **MAML** — gradient-based meta-learner (evaluated with 5 and 10 inner steps).
+- **MAML** — gradient-based meta-learner representing state-of-the-art baseline.
 ---
 
 ## Code overview
-
-Files in this project (what each file implements):
 
 - `data/muv.csv`  
   Dataset used for the experiments.
@@ -41,7 +39,7 @@ Files in this project (what each file implements):
   Metric computation (DAUPRC)
 
 - `plots.py`  
-  Plotting utilities used to reproduce the thesis figures (mean ± error bars for the reported metrics).
+  Plotting utilities used to reproduce the thesis figures.
 
 - `main.py`  
   main file that runs the experiments for all four models and save the results.
